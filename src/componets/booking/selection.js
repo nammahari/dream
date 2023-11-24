@@ -51,7 +51,7 @@ function Selection() {
       Date: ${date}
       Estimated Amount: ₹${estimatedAmount}`;
 
-    const phone = '+918015320210'; // Replace with the actual phone number
+    const phone = '+919342563416'; // Replace with the actual phone number
     const encodedMessage = encodeURIComponent(message);
 
 
@@ -72,7 +72,7 @@ function Selection() {
       Vehicle: ${seatingVehicle}
       Date: ${tourdate}`;
 
-    const phone = '+918015320210'; // Replace with the actual phone number
+    const phone = '+919342563416'; // Replace with the actual phone number
     const encodedMessage = encodeURIComponent(message);
 
 
@@ -84,253 +84,256 @@ function Selection() {
   };
 
 
-  const calculateEstimatedAmount = () => {
+  useEffect(() => {
+    const calculateEstimatedAmount = () => {
 
-    const pickupValue = pickupLocation;
-    const dropValue = dropLocation;
-    const vehicleValue = vehicle;
-
-    let amount = 0;
-    // Calculations for Metupalayam to Ooty
-
-    if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 2200;
-    } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 2000;
-    } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 2500;
-    } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 3000;
-    } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 5000;
-    } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 5500;
-    }
-
-    else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 2200;
-    } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 2000;
-    } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 2500;
-    } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 3000;
-    } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 5000;
-    } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 5500;
-    }
-
-    // Calculations for Coimbatore to Ooty
-
-    else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 3000;
-    } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 2800;
-    } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 4000;
-    } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 4500;
-    } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 6000;
-    } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 6800;
-    }
-
-    else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 3000;
-    } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 2800;
-    } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 4000;
-    } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 4500;
-    } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 6000;
-    } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 6800;
-    }
-
-
-    // Calculations for Mysore to Ooty
-
-    else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 4500;
-    } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 4500;
-    } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 6500;
-    } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 7000;
-    } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 14500;
-    } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 17000;
-    }
-
-    else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 4500;
-    } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 4500;
-    } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 6500;
-    } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 7000;
-    } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 14500;
-    } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 17000;
-    }
-
-    // Calculations for Bangalore to Ooty
-
-    else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 8500;
-    } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 8000;
-    } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 11000;
-    } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 22500;
-    } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 25000;
-    }
-    else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
-      amount = 8500;
-    } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
-      amount = 8000;
-    } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
-      amount = 11000;
-    } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
-      amount = 22500;
-    } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
-      amount = 25000;
-    }
-
-    // Calculations for Ooty to Coorg
-
-    else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Etios") {
-      amount = 8500;
-    } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Dzire") {
-      amount = 8500;
-    } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Xylo") {
-      amount = 10000;
-    } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Traveller") {
-      amount = 21000;
-    } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Coach") {
-      amount = 24000;
-    }
-    else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Etios") {
-      amount = 8500;
-    } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Dzire") {
-      amount = 8500;
-    } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Xylo") {
-      amount = 10000;
-    } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Traveller") {
-      amount = 21000;
-    } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Coach") {
-      amount = 24000;
-    }
-
-    // Calculations for Ooty to Wayanad
-
-    else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Etios") {
-      amount = 5000;
-    } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Dzire") {
-      amount = 4500;
-    } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Xylo") {
-      amount = 5500;
-    } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Innova") {
-      amount = 6500;
-    } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Traveller") {
-      amount = 22000;
-    } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-    else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Etios") {
-      amount = 5000;
-    } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Dzire") {
-      amount = 4500;
-    } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Xylo") {
-      amount = 5500;
-    } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Innova") {
-      amount = 6500;
-    } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Traveller") {
-      amount = 22000;
-    } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-
-
-    // Calculations for Ooty to Calicut
-
-    else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Etios") {
-      amount = 6500;
-    } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Dzire") {
-      amount = 6000;
-    } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Xylo") {
-      amount = 8000;
-    } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Innova") {
-      amount = 9000;
-    } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Traveller") {
-      amount = 22000;
-    } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-    else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Etios") {
-      amount = 6500;
-    } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Dzire") {
-      amount = 6000;
-    } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Xylo") {
-      amount = 8000;
-    } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Innova") {
-      amount = 9000;
-    } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Traveller") {
-      amount = 22000;
-    } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-
-    // Calculations for Ooty to Cochin
-
-    else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Etios") {
-      amount = 9000;
-    } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Dzire") {
-      amount = 9000;
-    } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Xylo") {
-      amount = 10000;
-    } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Traveller") {
-      amount = 21000;
-    } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-
-    else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Etios") {
-      amount = 9000;
-    } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Dzire") {
-      amount = 9000;
-    } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Xylo") {
-      amount = 10000;
-    } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Innova") {
-      amount = 12000;
-    } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Traveller") {
-      amount = 21000;
-    } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Coach") {
-      amount = 23000;
-    }
-
-    setEstimatedAmount(amount);
-  };
+      const pickupValue = pickupLocation;
+      const dropValue = dropLocation;
+      const vehicleValue = vehicle;
+  
+      let amount = 'Not Available';
+      // Calculations for Metupalayam to Ooty
+  
+      if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 2200;
+      } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 2000;
+      } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 2500;
+      } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 3000;
+      } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 5000;
+      } else if (pickupValue === "Metupalayam" && dropValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 5500;
+      }
+  
+      else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 2200;
+      } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 2000;
+      } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 2500;
+      } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 3000;
+      } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 5000;
+      } else if (dropValue === "Metupalayam" && pickupValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 5500;
+      }
+  
+      // Calculations for Coimbatore to Ooty
+  
+      else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 3000;
+      } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 2800;
+      } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 4000;
+      } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 4500;
+      } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 6000;
+      } else if (pickupValue === "Coimbatore" && dropValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 6800;
+      }
+  
+      else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 3000;
+      } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 2800;
+      } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 4000;
+      } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 4500;
+      } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 6000;
+      } else if (dropValue === "Coimbatore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 6800;
+      }
+  
+  
+      // Calculations for Mysore to Ooty
+  
+      else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 4500;
+      } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 4500;
+      } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 6500;
+      } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 7000;
+      } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 14500;
+      } else if (pickupValue === "Mysore" && dropValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 17000;
+      }
+  
+      else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 4500;
+      } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 4500;
+      } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 6500;
+      } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 7000;
+      } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 14500;
+      } else if (dropValue === "Mysore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 17000;
+      }
+  
+      // Calculations for Bangalore to Ooty
+  
+      else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 8500;
+      } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 8000;
+      } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 11000;
+      } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 22500;
+      } else if (pickupValue === "Bangalore" && dropValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 25000;
+      }
+      else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Etios") {
+        amount = 8500;
+      } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Dzire") {
+        amount = 8000;
+      } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Xylo") {
+        amount = 11000;
+      } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Traveller") {
+        amount = 22500;
+      } else if (dropValue === "Bangalore" && pickupValue === "Ooty" && vehicleValue === "Coach") {
+        amount = 25000;
+      }
+  
+      // Calculations for Ooty to Coorg
+  
+      else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Etios") {
+        amount = 8500;
+      } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Dzire") {
+        amount = 8500;
+      } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Xylo") {
+        amount = 10000;
+      } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Traveller") {
+        amount = 21000;
+      } else if (pickupValue === "Ooty" && dropValue === "Coorg" && vehicleValue === "Coach") {
+        amount = 24000;
+      }
+      else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Etios") {
+        amount = 8500;
+      } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Dzire") {
+        amount = 8500;
+      } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Xylo") {
+        amount = 10000;
+      } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Traveller") {
+        amount = 21000;
+      } else if (dropValue === "Ooty" && pickupValue === "Coorg" && vehicleValue === "Coach") {
+        amount = 24000;
+      }
+  
+      // Calculations for Ooty to Wayanad
+  
+      else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Etios") {
+        amount = 5000;
+      } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Dzire") {
+        amount = 4500;
+      } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Xylo") {
+        amount = 5500;
+      } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Innova") {
+        amount = 6500;
+      } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Traveller") {
+        amount = 22000;
+      } else if (pickupValue === "Ooty" && dropValue === "Wayanad" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+      else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Etios") {
+        amount = 5000;
+      } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Dzire") {
+        amount = 4500;
+      } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Xylo") {
+        amount = 5500;
+      } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Innova") {
+        amount = 6500;
+      } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Traveller") {
+        amount = 22000;
+      } else if (dropValue === "Ooty" && pickupValue === "Wayanad" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+  
+  
+      // Calculations for Ooty to Calicut
+  
+      else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Etios") {
+        amount = 6500;
+      } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Dzire") {
+        amount = 6000;
+      } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Xylo") {
+        amount = 8000;
+      } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Innova") {
+        amount = 9000;
+      } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Traveller") {
+        amount = 22000;
+      } else if (pickupValue === "Ooty" && dropValue === "Calicut" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+      else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Etios") {
+        amount = 6500;
+      } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Dzire") {
+        amount = 6000;
+      } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Xylo") {
+        amount = 8000;
+      } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Innova") {
+        amount = 9000;
+      } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Traveller") {
+        amount = 22000;
+      } else if (dropValue === "Ooty" && pickupValue === "Calicut" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+  
+      // Calculations for Ooty to Cochin
+  
+      else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Etios") {
+        amount = 9000;
+      } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Dzire") {
+        amount = 9000;
+      } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Xylo") {
+        amount = 10000;
+      } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Traveller") {
+        amount = 21000;
+      } else if (pickupValue === "Ooty" && dropValue === "Cochin" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+  
+      else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Etios") {
+        amount = 9000;
+      } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Dzire") {
+        amount = 9000;
+      } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Xylo") {
+        amount = 10000;
+      } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Innova") {
+        amount = 12000;
+      } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Traveller") {
+        amount = 21000;
+      } else if (dropValue === "Ooty" && pickupValue === "Cochin" && vehicleValue === "Coach") {
+        amount = 23000;
+      }
+  
+      setEstimatedAmount(amount);
+    };
+    calculateEstimatedAmount();
+}, [pickupLocation, dropLocation, vehicle]);
 
   // const calculateTourestimatedamount = () => {
 
@@ -530,11 +533,6 @@ function Selection() {
       setShowDivision1(false);
     }
   };
-
-
-  useEffect(() => {
-    calculateEstimatedAmount();
-  }, [pickupLocation, dropLocation, vehicle,calculateEstimatedAmount]);
 
   const [currentSection16, setCurrentSection16] = useState(1);
   useEffect(() => {
