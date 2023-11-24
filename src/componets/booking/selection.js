@@ -72,7 +72,7 @@ function Selection() {
       Vehicle: ${seatingVehicle}
       Date: ${tourdate}`;
 
-    const phone = '+919342563416'; // Replace with the actual phone number
+    const phone = '+918015320210'; // Replace with the actual phone number
     const encodedMessage = encodeURIComponent(message);
 
 
@@ -755,7 +755,7 @@ function Selection() {
                   </option>
                   <option value="Ooty">Ooty</option>
                   <option value="Coimbatore">Coimbatore</option>
-                  <option value="Metupalayam">Metupalayam</option>
+                  <option value="Metupalayam">Mettupalayam</option>
                   <option value="Mysore">Mysore</option>
                   <option value='Bangalore'>Bangalore</option>
                   {/* Add more location options as needed */}

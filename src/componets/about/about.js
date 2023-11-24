@@ -2,9 +2,11 @@
 import React from 'react';
 import Dream from '../../assest/aboutDream.svg'
 import Vision from '../../assest/vision.svg'
+import Footer from '../footer/footer';
 const About = () => {
   return (
-    <div className='grid grid-rows-1 gap-10 justify-items-center py-20 px-10 lg:px-40 md:px-20'>
+    <div>
+      <div className='grid grid-rows-1 gap-10 justify-items-center py-20 px-10 lg:px-40 md:px-20'>
       <p className='text-black font-medium text-5xl font-display text-center '>About Dream Destiny</p>
       <p className='text-[#1A202C] text-lg font-normal text-justify py-5    '>At Dream Destiny, we believe that every journey should be a memorable experience. Established with a passion for providing exceptional travel services, we take pride in being your trusted partner for exploring the breathtaking beauty of Nilgiris and its surrounding areas. Whether you're a solo traveler, a couple seeking a romantic getaway, a family on vacation, or a group of friends ready for adventure, our dedicated team is here to make your travel dreams a reality.</p>
       <img className='w-full' src={Dream} alt="Dream Destiny Vector" />
@@ -35,6 +37,8 @@ const About = () => {
     </div>
 
       <p className='text-[#1A202C] text-center font-display text-lg font-bold py-5'>Embark on your dream journey with Dream Destiny - where every mile is a memory.</p>
+    </div>
+    <Footer/>
     </div>
   );
 };

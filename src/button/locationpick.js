@@ -11,9 +11,9 @@ const LocationPickUp = () => {
         </option>
         <option value="Ooty">Ooty</option>
         <option value="Coimbatore">Coimbatore</option>
-        <option value="Metupalayam">Metupalayam</option>
+        <option value="Metupalayam">Mettupalayam</option>
         <option value="Coonoor">Coonoor</option>
-        <option value='Pkkara'>Pkkara</option>
+        <option value='Pkkara'>Pykara</option>
         <option value='Mudumalai'>Mudumalai</option>
         <option value='Avalanche'>Avalanche</option>
         {/* Add more location options as needed */}
