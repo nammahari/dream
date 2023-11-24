@@ -6,7 +6,6 @@ import Home from './componets/home/home.js';
 import Load from './componets/load.js';
 import { useState,useEffect } from 'react';
 import Booking from "./componets/booking/booking.js";
-import Footer from "./componets/footer/footer.js";
 
 function App(){
   const [isLoading, setIsLoading] = useState(true);

@@ -7,10 +7,8 @@ import avalanche from '../../assest/avalanche.svg';
 import ootyandcoonoor from '../../assest/ootyandcoonoor.svg';
 import ootyandpykara from '../../assest/ootyandpykara.svg';
 import ootyandavalanche from '../../assest/ootyandavalanche.svg';
-import { useState } from 'react';
 
 const Tour = () => {
-  const [handleOnClick] = useState('');
   const handelOnClick = () => {
     window.location.href = '/booking';
   }

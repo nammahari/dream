@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Cover from '../../assest/cover.svg';
 import Coverm from '../../assest/coverm.svg';
 import Popular from '../popular/popular.js';

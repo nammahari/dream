@@ -45,7 +45,6 @@ const BookNow = () => {
         // Open WhatsApp in a new tab
         window.open(whatsappUrl, '_blank', 'noreferrer');
       };
-      const whatsappUrl = ``;
       // const [showDiv1, setShowDiv1] = useState(true);
       // const [showDiv2, setShowDiv2] = useState(false);
     return(
@@ -130,7 +129,7 @@ const BookNow = () => {
               </div>
             </div>
             <div className="absolute right-0 mr-20 xl:mr-[5rem] lg:mr-[1rem] 2xl:mt-[5rem] 2xl:top-0">
-              <a className="px-10 bg-white py-4 rounded-md cursor-pointer font-['Poppins'] font-weight-600 font-[16px] font-bold tracking-tight" onClick={book}>Book</a>
+              <a className="px-10 bg-white py-4 rounded-md cursor-pointer font-['Poppins'] font-weight-600 font-[16px] font-bold tracking-tight" onClick={book} href={book}>Book</a>
             </div>
           </div>
         </div>
@@ -215,7 +214,7 @@ const BookNow = () => {
               </div>
 
               <div className=' relative w-full bg-amber-400 rounded-bl-[20px] rounded-br-[20px] mt-[6rem]'>
-                <a className="bg-white text-black pb-2 pt-2 pl-4 pr-4 rounded-md cursor-pointer font-['Poppins']  font-[20px] font-medium tracking-tight" onClick={book}>Book Now</a>
+                <a className="bg-white text-black pb-2 pt-2 pl-4 pr-4 rounded-md cursor-pointer font-['Poppins']  font-[20px] font-medium tracking-tight" onClick={book} href={book}>Book Now</a>
               </div>
             </div>
 

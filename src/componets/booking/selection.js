@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import ImageGallery from "./imagegal.js";
 
 function Selection() {
@@ -8,11 +8,9 @@ function Selection() {
   const [dropLocation, setDropLocation] = useState('');
   const [tourLocation, settourLocation] = useState('');
   const [vehicle, setVehicle] = useState('');
-  const [tourvehicle, settourVehicle] = useState('');
   const [showDivision1, setShowDivision1] = useState(true); // Set to true for default visibility
   const [showDivision2, setShowDivision2] = useState(false);
   const [estimatedAmount, setEstimatedAmount] = useState("");
-  const [Tourestimatedamount, setTourestimatedamount] = useState("");
 
   const handlePickupLocationChange = (e) => {
     const selectedPickupLocation = e.target.value;
@@ -39,11 +37,6 @@ function Selection() {
     settourDate(selectedtourDate);
   };
 
-  const tourhandleVehicleChange = (e) => {
-    const selectedtourVehicle = e.target.value;
-    settourVehicle(selectedtourVehicle);
-  };
-
   const tourhandleLocationChange = (e) => {
     const selectedtourLocation = e.target.value;
     settourLocation(selectedtourLocation);
@@ -68,7 +61,6 @@ function Selection() {
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank', 'noreferrer');
   };
-  const whatsappUrl = ``;
 
   const tourbookNow = () => {
     // Construct the message with the booking details
@@ -90,7 +82,6 @@ function Selection() {
     // Open WhatsApp in a new tab
     window.open(tourwhatsappUrl, '_blank', 'noreferrer');
   };
-  const tourwhatsappUrl = ``;
 
 
   const calculateEstimatedAmount = () => {
@@ -543,11 +534,7 @@ function Selection() {
 
   useEffect(() => {
     calculateEstimatedAmount();
-  }, [pickupLocation, dropLocation, vehicle]);
-
-  // useEffect(() => {
-  //   calculateTourestimatedamount();
-  // }, [tourLocation, tourvehicle]);
+  }, [pickupLocation, dropLocation, vehicle,calculateEstimatedAmount]);
 
   const [currentSection16, setCurrentSection16] = useState(1);
   useEffect(() => {

@@ -72,7 +72,7 @@ function Review() {
                                     <figure>
                                         <div className="flex justify-between items-center gap-x-4">
                                             <div className="flex items-center px-5 pt-5 gap-2">
-                                                <img src={item.head} className="w-5 h-5 lg:w-10 lg:h-10 md:w-10 md:h-10 rounded-full" />
+                                                <img src={item.head} alt={item.name} className="w-5 h-5 lg:w-10 lg:h-10 md:w-10 md:h-10 rounded-full" />
                                                 <div>
                                                     <span className="block text-gray-800 text-[7px] lg:text-[12px] md:text-[12px] font-semibold">{item.name}</span>
                                                     <span className="block text-gray-600 text-[4px] lg:text-[7px] md:text-[6px] mt-0.5">{item.place}</span>

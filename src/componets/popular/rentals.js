@@ -5,10 +5,8 @@ import xylo from '../../assest/xylo.svg';
 import Innova from '../../assest/Innova.svg';
 import traveller from '../../assest/traveller.svg';
 import Minibus from '../../assest/minibus.svg';
-import { useState } from 'react';
 
 const Rentals = () =>{
-  const [handleOnClick] = useState('');
   const handelOnClick = () => {
     window.location.href = '/booking';
   }

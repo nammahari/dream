@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Etios from '../../assest/etios.svg';
 import Dzire from '../../assest/dzire.svg';
 import xylo from '../../assest/xylo.svg';
