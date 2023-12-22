@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
+  content: [
+    'node_modules/flowbite-react/lib/esm/**/*.js',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
     screens: {
       'sm': '320px',
       // => @media (min-width: 320px) { ... }
@@ -25,4 +31,4 @@ module.exports = {
   plugins: [require("daisyui"), require('flowbite/plugin')],
 }
 
-}
+})

@@ -15,7 +15,7 @@ function Nav(){
     setMobileMenuOpen(!mobileMenuOpen);
   };
 return(
-    <nav className="md:flex item-center justify-between w-full bg-white border-b-2 border-[#B8B8B8] p-6">
+    <nav className="md:flex item-center justify-between w-full bg-white border-b-2 border-[#B8B8B8] p-6 relative z-10">
             <div>
               <img src={Logo} alt="logo" className="lg:w-[250px] w-[150px] md:w-[200px]" />
             </div>

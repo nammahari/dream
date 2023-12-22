@@ -6,6 +6,8 @@ import Home from './componets/home/home.js';
 import Load from './componets/load.js';
 import { useState,useEffect } from 'react';
 import Booking from "./componets/booking/booking.js";
+import Rentals from "./componets/booking/rentals.js";
+import Tour from "./componets/booking/tour.js";
 
 function App(){
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +27,8 @@ function App(){
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tour" element={<Tour />} />
+          <Route path="/rental" element={<Rentals />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/booking" element={<Booking />} />

@@ -5,13 +5,13 @@ import Footer from '../footer/footer.js';
 const booking = () => {
   return (
     <div>
-        <div id='booking-main' className='flex-column'>
-          <h1 className=''>Bookings</h1>
-          <div className='lg:flex'>
-              <div className='p-10'><Selection /></div>
+        <div className='flex flex-col justify-center'>
+          <div className='flex justify-center'><h1 className='p-10 font-display font-bold text-2xl lg:text-2xl xl:text-2xl'>Bookings</h1></div>
+          <div>
+              <div><Selection /></div>
           </div>
 
-          <div className="mt-[5rem]"><Footer /></div>
+          <div><Footer /></div>
         </div> 
     </div>
   )

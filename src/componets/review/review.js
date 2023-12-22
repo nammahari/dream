@@ -63,7 +63,7 @@ function Review() {
             <h1 className='text-black px-[4rem] text-center m-3 text-md lg:px-[22rem] md:text-3xl md:px-[14rem] font-medium font-display '>Trusted By Our Happy Customers</h1>
             <p className='font-display text-center text-[8px] px-10 md:text-[10px]'>A high-performing web-based car rental system for any rent-a-car company and website
             </p>
-            <Marquee pauseOnHover='true' autoFill='true'>
+            <Marquee pauseOnHover='true' autoFill='true' speed={20}>
                 <div className="mb-10">
                     <ul className="flex gap-6 pl-6">
                         {

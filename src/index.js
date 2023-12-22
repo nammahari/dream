@@ -1,6 +1,6 @@
 // Import React and createRoot
 import React from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 // Import your styles and components
 import './index.css';
