@@ -1,6 +1,5 @@
 import React from 'react'
 import Selection from './selection.js';
-import Footer from '../footer/footer.js';
 
 const booking = () => {
   return (
@@ -10,8 +9,6 @@ const booking = () => {
           <div>
               <div><Selection /></div>
           </div>
-
-          <div><Footer /></div>
         </div> 
     </div>
   )

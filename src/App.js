@@ -6,9 +6,8 @@ import Home from './componets/home/home.js';
 import Load from './componets/load.js';
 import { useState,useEffect } from 'react';
 import Booking from "./componets/booking/booking.js";
-import Rentals from "./componets/booking/rentals.js";
-import Tour from "./componets/booking/tour.js";
-
+import HeroBook from "./componets/booking/booknow.js"
+import Footer from "./componets/footer/footer.js";
 function App(){
   const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -27,10 +26,12 @@ function App(){
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/build" element={<HeroBook />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
+        <Footer />
       </Router>
       
   );
