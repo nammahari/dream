@@ -1,5 +1,6 @@
 import React from 'react'
 import Selection from './selection.js';
+import Footer from '../footer/footer.js';
 
 const booking = () => {
   return (
@@ -8,6 +9,7 @@ const booking = () => {
           <div className='flex justify-center'><h1 className='p-10 font-display font-bold text-2xl lg:text-2xl xl:text-2xl'>Bookings</h1></div>
           <div>
               <div><Selection /></div>
+              <Footer />
           </div>
         </div> 
     </div>

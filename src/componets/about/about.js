@@ -2,6 +2,7 @@
 import React from 'react';
 import Dream from '../../assest/aboutDream.svg'
 import Vision from '../../assest/vision.svg'
+import Footer from '../footer/footer';
 const About = () => {
   return (
     <div>
@@ -37,6 +38,7 @@ const About = () => {
 
       <p className='text-[#1A202C] text-center font-display text-lg font-bold py-5'>Embark on your dream journey with Dream Destiny - where every mile is a memory.</p>
     </div>
+    <Footer />
     </div>
   );
 };

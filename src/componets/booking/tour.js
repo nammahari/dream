@@ -29,8 +29,9 @@ function Tour() {
         { name: 'Ooty & Avalanche', pack: 'Two Day Package', image: 'https://res.cloudinary.com/dtqdoinxc/image/upload/v1703263267/Ooty_Avalanche_giko4g.png' },
         { name: 'Pykara & Mudumalai', pack: 'Two Day Package', image: 'https://res.cloudinary.com/dtqdoinxc/image/upload/c_crop,w_620,h_375/v1703263500/one-day-ooty-mudumalai-wildlife-sanctuary-tour-local-sightseeing-tour-package-mudumalai-wildlife-sanctuary-ooty_zrywar.jpg' },
     ];
-
+    const today = new Date().toISOString().split('T')[0];
     const cars = ['','Etios', 'Swift Dzire', 'Xylo', 'Innova', 'Traveller','Coach'];
+    
 
     const seating = () => {
         if(vehicle === 'Etios'){
@@ -166,15 +167,19 @@ function Tour() {
     const constructWhatsAppLink = () => {
         const selectedTour = tourData[currentSlide];
         const price = calculatePrice();
-        const message = `Booking Details:\nTour: ${selectedTour.name}\nTour Package:${selectedTour.pack}\nVehicle: ${vehicle}\nDate: ${date}`;
 
-        // Encode the message for a URL
+        // Validation check
+        if (!vehicle) {
+            alert("I can't make you fly 🥹, Kindly Select a Vehicle!");
+            return;
+        }else if (!date){
+            alert("I am familiar with Astrology but not as far to predict the date, Please Fill the Date to proceed 🤝")
+            return;
+        }
+        const message = `Booking Details:\nCar: ${selectedTour.name}\nPackage: ${selectedTour.pack}\nDate: ${date} \nPrice: ${price}`;
         const encodedMessage = encodeURIComponent(message);
+        const whatsappLink = `https://wa.me/+919342563416?text=${encodedMessage}`;
 
-        // Construct the WhatsApp link
-        const whatsappLink = `https://wa.me/+919342563416?text=${encodedMessage}`; // Replace 1234567890 with your WhatsApp number
-
-        // Open the link in a new tab
         window.open(whatsappLink, '_blank');
     };
     const SampleNextArrow = (props) => {
@@ -252,6 +257,7 @@ function Tour() {
                             <input
                                 type="date"
                                 value={date}
+                                min={today}
                                 onChange={(e) => setDate(e.target.value)}
                                 className="bg-transparent w-full py-2 leading-tight focus:outline-none"
                             />

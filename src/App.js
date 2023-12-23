@@ -22,7 +22,7 @@ function App(){
     
   return(
     isLoading ? <Load /> :
-    <Router>
+      <Router>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,9 +31,7 @@ function App(){
           <Route path="/about" element={<About />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
-        <Footer />
       </Router>
-      
   );
 }
 

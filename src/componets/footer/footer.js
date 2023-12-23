@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="footer items-center p-4 bg-[#FCC120] text-neutral-content">
+        <footer className="footer items-center p-4 bg-[#FCC120] text-neutral-content bottom-0">
         <aside className="items-center justify-items-center grid grid-rows-2 hap-5">
          <img src="https://res.cloudinary.com/dtqdoinxc/image/upload/v1700647950/dreamdestiny/Group_1000004178_snxgxo.png" alt="Logo" className="w-1/3 lg:w-[10rem] md:w-[8rem]"></img>
          <p className="font-display px-[5rem] lg:px-[10rem] text-[10px] text-center md:text-[12px] lg:text-lg">Your passport to seamless travel, where every mile is a curated adventure through Ooty's beauty and beyond.</p>

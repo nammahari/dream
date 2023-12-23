@@ -29,7 +29,7 @@ function Rentals() {
     ];
 
     const locations = ['Ooty', 'Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'];
-
+    const today = new Date().toISOString().split('T')[0];
     const calculatePrice = () => {
         const selectedCar = carData[currentSlide];
 
@@ -254,6 +254,7 @@ function Rentals() {
                             <input
                                 type="date"
                                 value={date}
+                                min={today}
                                 onChange={(e) => setDate(e.target.value)}
                                 className="bg-transparent w-full py-2 leading-tight focus:outline-none"
                             />
