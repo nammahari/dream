@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
@@ -135,9 +135,9 @@ function Rentals() {
     };
     const getDropLocationOptions = () => {
         if (pickup === 'Ooty') {
-            return ['Coorg', 'Wayanad', 'Cochin', 'Calicut'];
+            return ['', 'Coorg', 'Wayanad', 'Cochin', 'Calicut'];
         } else if (['Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'].includes(pickup)) {
-            return ['Ooty'];
+            return ['', 'Ooty'];
         } else {
             return locations.filter((location) => location !== pickup);
         }
@@ -146,13 +146,22 @@ function Rentals() {
     const constructWhatsAppLink = () => {
         const selectedCar = carData[currentSlide];
         const price = calculatePrice();
+
+        // Validation check
+        if (!pickup) {
+            alert('Please fill the Pickup Location.');
+            return;
+        }else if (!drop) {
+            alert("I can't Drop you at nowhere, Please Fill the Drop Location 🥹")
+            return;
+        }else if (!date){
+            alert("I am familiar with Astrology but not as far to predict the date, Please Fill the Date to proceed 🤝")
+            return;
+        }
         const message = `Booking Details:\nCar: ${selectedCar.name}\nPickup: ${pickup}\nDrop: ${drop}\nDate: ${date} \nPrice: ${price}`;
         const encodedMessage = encodeURIComponent(message);
+        const whatsappLink = `https://wa.me/+919342563416?text=${encodedMessage}`;
 
-        // Construct the WhatsApp link
-        const whatsappLink = `https://wa.me/+919342563416?text=${encodedMessage}`; // Replace 1234567890 with your WhatsApp number
-
-        // Open the link in a new tab
         window.open(whatsappLink, '_blank');
     };
     const SampleNextArrow = (props) => {
@@ -230,7 +239,7 @@ function Rentals() {
                             <label className="font-display font-medium">Drop Location:</label>
                             <select
                                 value={drop}
-                                onChange={(e) => {setDrop(e.target.value); calculatePrice();}}
+                                onChange={(e) => { setDrop(e.target.value); calculatePrice(); }}
                                 className="bg-transparent w-full py-2 leading-tight focus:outline-none"
                             >
                                 {getDropLocationOptions().map((location, index) => (
