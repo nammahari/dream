@@ -147,8 +147,6 @@ function Rentals() {
         const selectedCar = carData[currentSlide];
         const price = calculatePrice();
         const message = `Booking Details:\nCar: ${selectedCar.name}\nPickup: ${pickup}\nDrop: ${drop}\nDate: ${date} \nPrice: ${price}`;
-
-        // Encode the message for a URL
         const encodedMessage = encodeURIComponent(message);
 
         // Construct the WhatsApp link
