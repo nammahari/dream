@@ -19,7 +19,7 @@ function HeroBook() {
 
     const getDropLocationOptions = () => {
         if (pickup === 'Ooty') {
-            return ['','Coorg', 'Wayanad', 'Cochin', 'Calicut'];
+            return ['', 'Coorg', 'Wayanad', 'Cochin', 'Calicut','Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'];
         } else if (['Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'].includes(pickup)) {
             return ['','Ooty'];
         } else {
@@ -85,7 +85,7 @@ function HeroBook() {
                             <select
                                 value={drop}
                                 onChange={(e) => { setDrop(e.target.value); }}
-                                className="bg-transparent font-display md:text-[10px] lg:text-[14px] xl:text-[18px] w-full py-2 leading-tight focus:outline-none"
+                                className="bg-transparent font-display md:text-[10px] lg:text-[14px] xl:text-[18px] w-full lg:w-fit md:w-fit xl:w-fit py-2 leading-tight focus:outline-none"
                             >
                                 {getDropLocationOptions().map((location, index) => (
                                     <option key={index} value={location}>

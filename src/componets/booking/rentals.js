@@ -45,6 +45,18 @@ function Rentals() {
             return 6000;
         } else if (pickup === 'Coimbatore' && drop === 'Ooty' && selectedCar.name === 'Coach') {
             return 6800;
+        }else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Etios') {
+            return 3000;
+        } else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Swift Dzire') {
+            return 2800;
+        } else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Xylo') {
+            return 4000;
+        } else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Innova') {
+            return 4500;
+        } else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Traveller') {
+            return 6000;
+        } else if (drop === 'Coimbatore' && pickup === 'Ooty' && selectedCar.name === 'Coach') {
+            return 6800;
         } else if (pickup === 'Mysore' && drop === 'Ooty' && selectedCar.name === 'Etios') {
             return 4500;
         } else if (pickup === 'Mysore' && drop === 'Ooty' && selectedCar.name === 'Swift Dzire') {
@@ -56,6 +68,18 @@ function Rentals() {
         } else if (pickup === 'Mysore' && drop === 'Ooty' && selectedCar.name === 'Traveller') {
             return 14500;
         } else if (pickup === 'Mysore' && drop === 'Ooty' && selectedCar.name === 'Coach') {
+            return 17000;
+        }else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Etios') {
+            return 4500;
+        } else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Swift Dzire') {
+            return 4500;
+        } else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Xylo') {
+            return 6500;
+        } else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Innova') {
+            return 7000;
+        } else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Traveller') {
+            return 14500;
+        } else if (drop === 'Mysore' && pickup === 'Ooty' && selectedCar.name === 'Coach') {
             return 17000;
         } else if (pickup === "Mettupalayam" && drop === "Ooty" && selectedCar.name === "Etios") {
             return 2200;
@@ -69,6 +93,18 @@ function Rentals() {
             return 5000;
         } else if (pickup === "Mettupalayam" && drop === "Ooty" && selectedCar.name === "Coach") {
             return 5500;
+        }else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Etios") {
+            return 2200;
+        } else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Swift Dzire") {
+            return 2000;
+        } else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Xylo") {
+            return 2500;
+        } else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Innova") {
+            return 3000;
+        } else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Traveller") {
+            return 5000;
+        } else if (drop === "Mettupalayam" && pickup === "Ooty" && selectedCar.name === "Coach") {
+            return 5500;
         } else if (pickup === "Bangalore" && drop === "Ooty" && selectedCar.name === "Etios") {
             return 8500;
         } else if (pickup === "Bangalore" && drop === "Ooty" && selectedCar.name === "Swift Dzire") {
@@ -80,6 +116,18 @@ function Rentals() {
         } else if (pickup === "Bangalore" && drop === "Ooty" && selectedCar.name === "Traveller") {
             return 22500;
         } else if (pickup === "Bangalore" && drop === "Ooty" && selectedCar.name === "Coach") {
+            return 25000;
+        } else if (drop=== "Bangalore" && pickup === "Ooty" && selectedCar.name === "Etios") {
+            return 8500;
+        } else if (drop === "Bangalore" && pickup === "Ooty" && selectedCar.name === "Swift Dzire") {
+            return 8000;
+        } else if (drop === "Bangalore" && pickup === "Ooty" && selectedCar.name === "Xylo") {
+            return 11000;
+        } else if (drop === "Bangalore" && pickup === "Ooty" && selectedCar.name === "Innova") {
+            return 12000;
+        } else if (drop === "Bangalore" && pickup === "Ooty" && selectedCar.name === "Traveller") {
+            return 22500;
+        } else if (drop === "Bangalore" && pickup === "Ooty" && selectedCar.name === "Coach") {
             return 25000;
         } else if (pickup === "Ooty" && drop === "Coorg" && selectedCar.name === "Etios") {
             return 8500;
@@ -135,7 +183,7 @@ function Rentals() {
     };
     const getDropLocationOptions = () => {
         if (pickup === 'Ooty') {
-            return ['', 'Coorg', 'Wayanad', 'Cochin', 'Calicut'];
+            return ['', 'Coorg', 'Wayanad', 'Cochin', 'Calicut','Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'];
         } else if (['Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'].includes(pickup)) {
             return ['', 'Ooty'];
         } else {
