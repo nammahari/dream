@@ -73,7 +73,7 @@ const Tour = () => {
           </div>
 
           <div class='tour-car'>
-            <div class='tour-top'><h2>Ooty & Coonoor</h2></div>
+            <div class='tour-top'><h2>Ooty & Pykara</h2></div>
             <img src={ootyandpykara} alt='ooty and pykara' class='tour-image' />
             <div class='tour-bottom'>
               <h2>2 Days Tour</h2>
@@ -82,13 +82,22 @@ const Tour = () => {
           </div>
 
           <div class='tour-car'>
-            <div class='tour-top'><h2>Ooty & Coonoor</h2></div>
+            <div class='tour-top'><h2>Ooty & Avalanche</h2></div>
             <img src={ootyandavalanche} alt='ooty and avalance' class='tour-image' />
             <div class='tour-bottom'>
               <h2>2 Days Tour</h2>
               <button class='book-now' onClick={handelOnClick}><h3>Book Now</h3></button>
             </div>
           </div>
+          <div class='tour-car'>
+            <div class='tour-top'><h2>Mudumalai & Pykara</h2></div>
+            <img src='https://res.cloudinary.com/dtqdoinxc/image/upload/v1703429754/Catalogue_Car_bhpix9.svg' alt='ooty and avalance' class='tour-image' />
+            <div class='tour-bottom'>
+              <h2>2 Days Tour</h2>
+              <button class='book-now' onClick={handelOnClick}><h3>Book Now</h3></button>
+            </div>
+          </div>
+          
 
         </div>
       </div>
