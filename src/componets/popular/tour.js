@@ -28,7 +28,7 @@ const Tour = () => {
 
 
           <div class='tour-car'>
-            <div class='tour-top'><h2>Mudhumalai Sight Seeing</h2></div>
+            <div class='tour-top'><h2>Mudumalai Sight Seeing</h2></div>
             <img src={mudumalai} alt='mudumalai' class='tour-image' />
             <div class='tour-bottom'>
               <h2>1 Day Tour</h2>
