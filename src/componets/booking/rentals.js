@@ -183,7 +183,7 @@ function Rentals() {
     };
     const getDropLocationOptions = () => {
         if (pickup === 'Ooty') {
-            return ['', 'Coorg', 'Wayanad', 'Cochin', 'Calicut','Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'];
+            return ['','Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore','Coorg', 'Wayanad', 'Cochin', 'Calicut'];
         } else if (['Mettupalayam', 'Coimbatore', 'Mysore', 'Bangalore'].includes(pickup)) {
             return ['', 'Ooty'];
         } else {
