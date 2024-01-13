@@ -19,13 +19,13 @@ function Home() {
           <img src={Coverm} className="w-full max-h-800 md:hidden" alt="Mobile Cover" />
           <img src={Cover} className="w-full hidden md:block" alt="Desktop Cover" />
         </div>
-        <div className='px-10 pb-10 md:mt-[-4rem] mt-[-10rem]'>
+        <div className='relative z-10 px-10 pb-10 md:mt-[-4rem] mt-[-10rem]'>
           <HeroBook />
         </div>
       </header>
       <main>
 
-        <div class='content'>
+        <div class='content' className='relative z-10'>
           <Popular />
           <Why />
           <Gal />
@@ -33,6 +33,7 @@ function Home() {
           <Footer />
         </div>
       </main>
+      
     </body>
 
   );

@@ -119,11 +119,13 @@ function HeroBook() {
                                 >
                                     Book Now
                                 </button>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }
